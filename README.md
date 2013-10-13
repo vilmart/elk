@@ -6,13 +6,15 @@ Practival exercises in the Linux Kernel
 Introduction
 ===========
 
-For our exercises with the Linux kernel will use virtualization technology that implements undoubtedly many benefits, but requires a more complex management . 
+For our exercises with the Linux kernel, we will use the Ubuntu distribution and virtualization technology. The virtualization technology implements many benefits, but requires a more complex management. Fortunately there are many solutions to minimize this complexity.
 
-Fortunately there are many solutions to minimize this complexity and the Open Source world leads this area. One such solution is the virt -manager of Red Hat , which simplifies the management of virtual machines and can be performed in the main Hypervisors free software through a command line interface or graphical user interface ( GUI ) .
+One such solution is the virt-manager of Red Hat , which simplifies the management of virtual machines and can be performed in the main Hypervisors free software through a command line interface or graphical user interface ( GUI ).
 
+Installation Ubuntu
+===============
 
-Installation
-=========
+Installation virt-manager
+===================
 
 1 ) Open a terminal and run the command :
 
