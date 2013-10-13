@@ -77,30 +77,54 @@ Compiling the kernel of Ubuntu
 3) Open a terminal and following commands to compile the Kernel of Ubuntu:
 
        - $ sudo apt-get update
+
        - $ sudo apt-get install fakeroot
+
        - $ sudo apt-get install kernel-wedge build-essential makedumpfile
+
        - $ sudo apt-get install kernel-package libncurses5 libncurses5-dev
+
        - $ sudo apt-get build-dep -no-install-recommends linux-image-$ (uname-r)
+
        - $ cd /usr/src/
+
        - $ ls
+
        - $ cd init
+
        - $ sudo cp main.c main.c.before
 
        - $ sudo gedit main.c
+
        *** Add the printk and save the change ***
        *** Example in "Inserting printk in Kernel" ***
 
        - $ cd ..
+
        - $ sudo make menuconfig
+
        *** Customize the compilation parameters - optional ***
 
        - $ export CONCURRENCY_LEVEL=2
+
       *** CONCURRENCY_LEVEL=2 is the number of CPUs defined to virtual-machine adding 1 ***
 
        - $ sudo make-kpkg clean
+
        - $ sudo fakeroot make-kpkg -initrd -append-to-version =-my-Kerney kernel-image kernel-headers
 
        *** Now is patience - Compilation started ***
 
        - $ cd ..
+
        - $ ls
+
+       - $ sudo dpkg-i linux-image-2.6.32.61+drm33.26-meu-kernel_2.6.32.61+drm33.26-meu-kernel-10.00.Custom_i386.deb
+
+       - s sudo dpkg-i linux-headers-2.6.32.61+drm33.26-meu-kernel_2.6.32.61+drm33.26-meu-kernel-10.00.Custom_i386.deb
+
+       - s sudo update-initramfs-c-k 2.6.32.61+drm33.26-meu-kerne.
+
+       - $ sudo update-grub
+
+      *** RESTART THE VIRTUAL MACHINE
