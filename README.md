@@ -32,3 +32,8 @@ After being executed , the command using and enjoying about 22 MB of disk space 
 4 ) Now we turn and run virt -manager . To activate and run the virt -manager run the command :
 
       - $ sudo virt -manager
+      
+Next step
+=========
+
+Creating a virtual machine...
