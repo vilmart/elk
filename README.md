@@ -10,12 +10,13 @@ For our exercises with the Linux kernel will use virtualization technology that 
 
 Fortunately there are many solutions to minimize this complexity and the Open Source world leads this area. One such solution is the virt -manager of Red Hat , which simplifies the management of virtual machines and can be performed in the main Hypervisors free software through a command line interface or graphical user interface ( GUI ) .
 
-installation
+
+Installation
 =========
 
 1 ) Open a terminal and run the command :
 
-      - $ sudo apt- intall virt -manager
+      - $ sudo apt-install virt-manager
 
 After being executed , the command using and enjoying about 22 MB of disk space to install a set of applications virt -manager .
 
@@ -23,15 +24,15 @@ After being executed , the command using and enjoying about 22 MB of disk space 
 
       - $ ps ax | grep libvirtd
 
-      - $ which virt -manager
+      - $ which virt-manager
 
 3 ) Now let's install QEMU , which will be our Hypervisor . To install QEMU run the command :
 
-      - $ sudo apt- get install qemu
+      - $ sudo apt-get install qemu
 
 4 ) Now we turn and run virt -manager . To activate and run the virt -manager run the command :
 
-      - $ sudo virt -manager
+      - $ sudo virt-manager
       
 Next step
 =========
