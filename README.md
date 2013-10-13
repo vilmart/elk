@@ -87,3 +87,33 @@ Compiling the kernel of Ubuntu
 6) Then run the command:
 
        - $ sudo apt-get install kernel-package libncurses5 libncurses5-dev
+
+7) Then run the command:
+
+       - $ sudo apt-get build-dep -no-install-recommends linux-image-$ (uname-r)
+
+8) Then run the command:
+
+       - $ cd / usr / src /
+
+9) Then run the command:
+
+       - $ ls
+
+10) Then run the command:
+
+       - $ cd linux-2.6.32
+
+11) Then run the command:
+
+       - $ ls
+
+12) Then run the command:
+
+       - $ cd
+
+13) Then run the command:
+
+       - $ sudo make menuconfig
+ 
+(Note: change the parameter settings to find required - optional)
