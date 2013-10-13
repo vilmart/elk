@@ -1,5 +1,0 @@
-$ sudo apt-install virt-manager
-$ ps ax | grep libvirtd
-$ which virt-manager
-$ sudo apt-get install qemu
-$ sudo virt-manager
