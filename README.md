@@ -13,6 +13,15 @@ One such solution is the virt-manager of Red Hat , which simplifies the manageme
 Installation Ubuntu
 ===============
 
+Ubuntu Linux distribution data used:
+
+- Ubuntu 10.04.2
+
+- Kernel 2.6.32.28-generic
+
+- Download: (http://mirror.linux.org.au/ubuntu-releases/10.04.2/
+
+
 Installation virt-manager
 ===================
 
