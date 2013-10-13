@@ -49,3 +49,5 @@ Creating a virtual machine
 
 6) Select "Advanced options", select "qemu", select where your architecture then press "Finish".
 
+7) Created virtual machine. Now you need to customize your Linux distribution.
+
