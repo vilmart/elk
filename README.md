@@ -10,6 +10,7 @@ For our exercises with the Linux kernel, we will use the Ubuntu distribution and
 
 One such solution is the virt-manager of Red Hat , which simplifies the management of virtual machines and can be performed in the main Hypervisors free software through a command line interface or graphical user interface ( GUI ).
 
+
 Ubuntu
 ======
 
@@ -20,6 +21,7 @@ Ubuntu Linux distribution data used:
 - Kernel 2.6.32.28-generic
 
 - Download: http://mirror.linux.org.au/ubuntu-releases/10.04.2/
+
 
 Installation virt-manager
 ===================
@@ -43,6 +45,7 @@ After being executed , the command using and enjoying about 22 MB of disk space 
 4 ) Now we turn and run virt -manager . To activate and run the virt-manager run the command :
 
       - $ sudo virt-manager
+
       
 Creating a virtual machine
 ==========================
@@ -61,3 +64,26 @@ Creating a virtual machine
 
 7) Created virtual machine. Now you need to customize your Linux distribution.
 
+
+Compiling the kernel of Ubuntu
+=========================
+
+1) Install and update all needed packages (via Synaptic Package Manager): 6 new packages and 377 packages will be installed will be updated...
+
+2) Restart your virtual machine...
+
+3) Open a terminal and run the command:
+
+       - $ sudo apt-get update
+
+4) Then run the command:
+
+       - $ sudo apt-get install fakeroot
+
+5) Then run the command:
+
+       - $ sudo apt-get install kernel-wedge build-essential makedumpfile
+
+6) Then run the command:
+
+       - $ sudo apt-get install kernel-package libncurses5 libncurses5-dev
