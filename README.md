@@ -81,12 +81,13 @@ Compiling the kernel of Ubuntu
        - $ sudo apt-get install kernel-wedge build-essential makedumpfile
        - $ sudo apt-get install kernel-package libncurses5 libncurses5-dev
        - $ sudo apt-get build-dep -no-install-recommends linux-image-$ (uname-r)
-       - $ cd / usr / src /
+       - $ cd /usr/src/
        - $ ls
        - $ cd init
        - $ sudo cp main.c main.c.before
        - $ sudo gedit main.c
        *** Add the printk and save the change ***
+       *** Example in "Inserting printk in Kernel" ***
        - $ cd ..
        - $ sudo make menuconfig
        *** Customize the compilation parameters - optional ***
