@@ -10,8 +10,8 @@ For our exercises with the Linux kernel, we will use the Ubuntu distribution and
 
 One such solution is the virt-manager of Red Hat , which simplifies the management of virtual machines and can be performed in the main Hypervisors free software through a command line interface or graphical user interface ( GUI ).
 
-Installation Ubuntu
-===============
+Ubuntu
+======
 
 Ubuntu Linux distribution data used:
 
@@ -19,8 +19,7 @@ Ubuntu Linux distribution data used:
 
 - Kernel 2.6.32.28-generic
 
-- Download: (http://mirror.linux.org.au/ubuntu-releases/10.04.2/
-
+- Download: http://mirror.linux.org.au/ubuntu-releases/10.04.2/
 
 Installation virt-manager
 ===================
