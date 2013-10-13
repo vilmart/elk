@@ -68,52 +68,31 @@ Creating a virtual machine
 Compiling the kernel of Ubuntu
 =========================
 
-1) Install and update all needed packages (via Synaptic Package Manager): 6 new packages and 377 packages will be installed will be updated...
+1) Start your virtual machine (Ubuntu)
 
-2) Restart your virtual machine...
+2) Install and update all needed packages
 
-3) Open a terminal and run the command:
+3) Restart your virtual machine
+
+3) Open a terminal and following commands to compile the Kernel of Ubuntu:
 
        - $ sudo apt-get update
-
-4) Then run the command:
-
        - $ sudo apt-get install fakeroot
-
-5) Then run the command:
-
        - $ sudo apt-get install kernel-wedge build-essential makedumpfile
-
-6) Then run the command:
-
        - $ sudo apt-get install kernel-package libncurses5 libncurses5-dev
-
-7) Then run the command:
-
        - $ sudo apt-get build-dep -no-install-recommends linux-image-$ (uname-r)
-
-8) Then run the command:
-
        - $ cd / usr / src /
-
-9) Then run the command:
-
        - $ ls
-
-10) Then run the command:
-
-       - $ cd linux-2.6.32
-
-11) Then run the command:
-
-       - $ ls
-
-12) Then run the command:
-
-       - $ cd
-
-13) Then run the command:
-
+       - $ cd init
+       - $ sudo cp main.c main.c.before
+       - $ sudo gedit main.c
+       *** Add the printk and save the change ***
+       - $ cd ..
        - $ sudo make menuconfig
- 
-(Note: change the parameter settings to find required - optional)
+       *** Customize the compilation parameters - optional ***
+       - $ export CONCURRENCY_LEVEL = 2
+       - $ sudo make-kpkg clean
+       - $ sudo fakeroot make-kpkg -initrd -append-to-version =-my-Kerney kernel-image kernel-headers
+       *** Now is patience - Compilation started ***
+       - $ cd ..
+       - $ ls
