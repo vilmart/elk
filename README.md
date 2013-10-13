@@ -123,7 +123,7 @@ Compiling the kernel of Ubuntu
 
        - s sudo dpkg-i linux-headers-2.6.32.61+drm33.26-meu-kernel_2.6.32.61+drm33.26-meu-kernel-10.00.Custom_i386.deb
 
-       - s sudo update-initramfs-c-k 2.6.32.61+drm33.26-meu-kerne.
+       - s sudo update-initramfs-c-k 2.6.32.61+drm33.26-meu-kernel
 
        - $ sudo update-grub
 
