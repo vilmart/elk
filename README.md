@@ -128,3 +128,39 @@ Compiling the kernel of Ubuntu
        - $ sudo update-grub
 
       *** RESTART THE VIRTUAL MACHINE
+
+
+Example: Inserting printk in Kernel
+============================
+
+asmlinkage void __init start_kernel(void)
+{
+
+	printk (KERN_INFO "*** MO806 - TÓPICOS EM SISTEMAS OPERACIONAIS / 2S2013 ***\n");
+
+	char * command_line;
+	extern struct kernel_param __start___param[], __stop___param[];
+
+	smp_setup_processor_id();
+
+	/*
+	 * Need to run as early as possible, to initialize the
+	 * lockdep hash:
+	 */
+	lockdep_init();
+	debug_objects_early_init();
+
+	/*
+	 * Set up the the initial canary ASAP:
+	 */
+	boot_init_stack_canary();
+
+	cgroup_init_early();
+
+	local_irq_disable();
+	early_boot_irqs_off();
+	early_init_irq_lock_class();
+
+/*
+
+
