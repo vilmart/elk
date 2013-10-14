@@ -1,7 +1,7 @@
-elk
+ELK
 ===
 
-Practival exercises in the Linux Kernel
+Practical exercises in the Linux Kernel
 
 Introduction
 ===========
